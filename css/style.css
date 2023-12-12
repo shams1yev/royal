@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Lora:ital@1&family=Montserrat:ital@1&family=Roboto:ital,wght@1,100;1,300&display=swap');
+
+
+
+:root{
+    --lato: 'Lato', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+  
+ a {
+    color: rgba(53, 42, 42, 0);
+}
+  
+  body {
+    line-height: 1.5;
+}
+  
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+  
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+  
+.navigation {
+    width: 100%;
+    height: 20vh;
+    background-color: #1F233E;
+}
+.navigation .navbar {
+    height: 19vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo img {
+    width: 54%;
+}
+.navbar__nav a {
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: var(--lato);
+    font-size: 1.2rem;
+}
+.navbar .navbar__nav .fa-search {
+    font-size: 1rem;
+    color: #fff;
+ }
+
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+    background-image: url(/images/banner.jpg);
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+}
+.header .banner {
+    display: grid;
+    align-items: center;
+    color: #fff;
+    grid-template-columns: 90% 10%;
+    gap: 5rem;
+}
+.security .container p{
+    color: #f2f4ff;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 9px;
+    height: 100vh;
+    font-family: var(--roboto);
+    width: 50%;
+}
+.header .banner .text {
+    padding: 10rem;
+}
+.header .banner .text h2 {
+    font-size: 2rem;
+    font-family: var(--lato);
+}
+.header .banner .text h1 {
+    font-size: 2.5rem;
+}
+.header .banner .text button {
+    padding: 18px 20px;
+    border: 0;
+    margin-top: 2rem;
+    background-color: rgb(77, 77, 240);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border-radius: 0;
+}
+.header .banner .text p {
+    font-size: 1.1rem;
+    font-family: var(--lato);
+}
+.company {
+    width: 90%;
+}
+.company__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.company__content .item h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: var(--lora);
+    margin-top: 0.7rem;
+}
+.company__content .item button {
+    font-size: 1.2rem;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.-5);
+    margin-top: 2rem;
+}
+.company__content .item h3 {
+    font-size: 1.8rem;
+    font-family: var(--lato);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: inline;
+    color: blue;
+}
+.company__content .item button img {
+    width: 20%;
+    height: 20%;
+  display: inline; 
+ }
+.services {
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+}
+.services .title {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    margin-right: 650px;
+}
+.services .title h4 {
+    font-size: 2rem;
+    color: #002aff;
+    margin-right: 350px ;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: inline;
+}
+.services .title h2 {
+    font-size: 2.2rem;
+}
+.services button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 0;
+    margin-top: 0.5rem;
+}
+.services button img {
+  width: 20%;
+    height: 30%;
+    display: inline;
+} 
+.services__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+    gap: 0;
+}
+.services__content .item {
+    height: 120%;
+    background-image: url(/images/s-1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services__content .item:hover a {
+    padding: 1.3rem 1.2rem;
+    background-color: #002aff;
+}
+.services__content .item a {
+    color: #fff;
+    font-family: var(--lato);
+
+}
+.services__content .two {
+    height: 65vh;
+    background-image: url(/images/s-2.jpg);
+    background-size: 100% 90vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services__content .two:hover a {
+    padding: 1.3rem 1.2rem;
+    background-color: #002aff;
+}
+.services__content .two a {
+    color: #fff;
+    font-family: var(--lato);
+}
+  
+.bank__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+    gap: 0;
+}
+.bank__content .item {
+    height: 70vh;
+    background-image: url(/images/s-3.jpg);
+    background-size: 100% 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+ }
+.bank__content .item:hover a {
+    padding: 1.3rem 1.2rem;
+    background-color: #002aff;
+    color: #dcdde0;
+}
+.bank__content .item a{
+    color: wheat;
+    font-family: var(--lato);
+}
+.bank__content .two {
+    height: 70vh;
+    background-image: url(/images/s-4.jpg);
+    background-size: 100% 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bank__content .two:hover a {
+    padding: 1.3rem 1.2rem;
+    background-color: #002aff;
+}
+.bank__content .two a {
+    color: #fff;
+    font-family: var(--lato);
+} 
+.guard {
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.guard .title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.guard .title h3 {
+    font-size: 2rem;
+    color: #002aff;
+    border-bottom: 1px solid green;
+    display: inline;
+}
+.guard .title h2 {
+    font-size: 2.2rem;
+}
+.guard button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 0;
+    margin-top: 0.5rem;
+}
+.guard button img {
+    width: 20%;
+    height: 30%;
+    display: inline;
+}
+ .guard__content{
+    background-image: url(/images/security-1.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.guard__content .item a {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid white;
+    opacity: 0;
+}
+.guard__content .two{
+    width: 20%;
+    height: 70vh;
+    background-image: url(/images/security-2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.guard__content .itemm{
+    width: 100%;
+    height: 70vh;
+    background-image: url(/images/security-2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.guard__content .itemm a {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid white;
+    opacity: 0;
+}
+.guard__content .sree {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/images/security-3.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.guard__content .sree:hover a {
+    opacity: 1;
+}
+.guard__content .sree a {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid white;
+    opacity: 0;
+}
+  
+.stories {
+    width: 100%;
+    padding: 4rem 0;
+}
+  
+.stories__content {
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px rgb(219, 210, 194);
+    align-items: center;
+}
+
+.stories__content button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    border: 0;
+    margin-top: 0.5rem;
+}
+.stories__content .item h3 {
+    font-size: 2rem;
+    color: #002aff;
+    border-bottom: 1px solid green;
+    display: inline;
+}
+.stories__content .item h2 {
+    font-size: 2.2rem;
+}
+.stories__content button img {
+    width: 20%;
+    height: 30%;
+    display: inline;
+}
+  
+.contact {
+    width: 100%;
+    padding: 4rem 0;
+}
+  
+.contact__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.contact__content .item form input {
+    height: 10vh;
+    margin-bottom: 0.5rem;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    font-size: 1rem;
+}
+.contact__content .item form button {
+    padding: 10px 20px;
+    background-color: rgb(91, 91, 238);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.5s linear;
+    border: 0;
+    border-radius: 0;
+    width: 50%;
+}
+.contact__content .item {
+    background-image: url(/images/guards.jpg);
+    background-repeat: no-repeat;
+}
+.contact__content .item form {
+    width: 55%;
+    height: 52vh;
+    background-color: #fff;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+  
+.footer {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: black;
+    color: #fff;
+}
+  
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.footer__content a img {
+    width: 10%;
+    height: 10%;
+    display: inline;
+}
+
+.footer__content .item .fa-brands {
+    padding: 7px 10px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.footer__content .itemm p{
+    font-size: 1rem;
+    font-family: var(--lato);
+}
+.footer__content a {
+    color: #fff;
+    display: block;
+    left: 10px;
+    margin-bottom: 1rem;
+}
+.footer__content button {
+    padding: 10px 10px;
+    background-color: rgb(84, 84, 228);
+    color: white;
+    font-size: 0.8rem;
+    border: 0;
+    margin-top: 1rem;
+}
+.footer__content h2 {
+    margin-bottom: 1rem;
+}
+.footer__content .item form input {
+    width: 80%;
+    height: 6vh;
+    font-size: 1.3rem;
+    border: 0;
+    outline: 0;
+    text-indent: 10px;
+}
+.copyright {
+    padding: 2rem;
+    background-color: #002aff;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.copyright a {
+    color: #fff;
+}
